@@ -33,7 +33,7 @@ const cypressCommands = {
       .click()
     },
   
-    whenISearchForDogs(){
+    thenISearchForDogs(){
       cy.get('input',{timeout:5000}).eq(0)
       .type('dogs')
       .type('{enter}');

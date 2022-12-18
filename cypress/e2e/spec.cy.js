@@ -8,6 +8,6 @@ describe('Simple Google Test', () => {
   })
 
   it('check history issues  ', () => {
-    cypressCommands.whenISearchForDogs()
+    cypressCommands.thenISearchForDogs()
   }) 
 })

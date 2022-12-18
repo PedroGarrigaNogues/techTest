@@ -1,3 +1,13 @@
+This is a technical test.
+
+ Before starting to explain the test I wanna say thanks for providing me the oportunity of doing this test, that said, I'll start the explanation.
+
+Part 1:
+
+The automated cypress task done required the search of images of dogs via google.
+
+Part 2:
+
 Enviroment: https://punkapi.com/documentation/v2
 
 Scenario: Validating the Punk API
