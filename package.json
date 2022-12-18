@@ -1,0 +1,20 @@
+{
+  "name": "testcases",
+  "version": "1.0.0",
+  "description": "testcases",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+  },
+  "keywords": [
+    "e2e",
+    "tests",
+    "automation"
+  ],
+  "author": "pedrogn",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.1.0"
+  }
+}
