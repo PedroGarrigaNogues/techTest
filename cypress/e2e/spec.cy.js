@@ -4,10 +4,10 @@ describe('Simple Google Test', () => {
 
 
   beforeEach(() => {
-    cypressCommands.iNavigateToGoogle()
+    cypressCommands.loadLandingPage()
   })
 
   it('check history issues  ', () => {
-    cypressCommands.thenISearchForDogs()
+    cypressCommands.defineFlight()
   }) 
 })
