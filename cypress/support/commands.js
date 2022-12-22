@@ -36,26 +36,34 @@ const cypressCommands = {
       cy.get('button')
       .contains('Aceptar todas las cookies',{timeout:5000})
       .click()
-      .wait(2000)
+      .wait(1000)
     },
   
-    defineFlight(){
-      cy.get('[data-move="parent-mobile"]',{timeout:5000}).eq(1).click().type('Barcelona{enter}').wait(3000)
-      cy.get('label',{timeout:5000}).contains('Fecha ida').type('2501202328012023')
-      cy.get('button[name="flight_passengers"]',{timeout:5000}).click()
-      cy.get('[data-focusin="data-focusin"]',{timeout:5000}).eq(14).click()
-      cy.get('[data-focusin="data-focusin"]',{timeout:5000}).eq(20).click()
-      cy.get('button[name="flight_passengers"]',{timeout:5000}).click()
-      cy.get('[data-validate="origin-destiny"]',{timeout:5000}).click()
-
+    destination(){
+      cy.get('[data-move="parent-mobile"]',{timeout:5000}).eq(1)
+      .click()
+      .type('Barcelona{enter}')
     },
-    
 
-//✓ El usuario selecciona un vuelo de ida al azar de la lista de resultados.
-//✓ La tarifa seleccionada (Basic, Optima o Excelente) debe ser configurable.
-//✓ El usuario selecciona un vuelo de vuelta al azar de la lista de resultados.
-//✓ La tarifa seleccionada (Basic, Optima o Excelente) debe ser configurable.
-//✓ El usuario hace click en “Continuar”.
+    date(){
+      cy.get('label',{timeout:5000})
+      .contains('Fecha ida')
+      .type('2505202328052023')
+    },
+
+    passangers(){
+      cy.get('button[name="flight_passengers"]',{timeout:5000}).click()
+      .get('[data-focusin="data-focusin"]',{timeout:5000}).eq(14).click()
+      .get('[data-focusin="data-focusin"]',{timeout:5000}).eq(20).click()
+      .get('button[name="flight_passengers"]',{timeout:5000}).click()
+    },
+
+    go(){
+      cy.get('[data-validate="origin-destiny"]',{timeout:5000})
+      .click()
+    },
+
+
       
       }
       

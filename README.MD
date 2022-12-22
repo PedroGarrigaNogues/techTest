@@ -31,7 +31,9 @@ Para back end no haría falta nada, ya que si la prueba funciona desde el front,
 Para mi las 3 principales son el "sprint planning", la "daily" y el "sprint review".
 También hay retrospectivas, reunión tres amigos o refinement, que aunque importantes, no son tan constantes.
 
-5. Como último paso, nos gustaría incorporar la validación de este caso de uso a nuestro plan de regresión automática.a. ¿Qué herramientas usarías para automatizar la parte Web, IOS, Android y la parte de Backend?
+5. Como último paso, nos gustaría incorporar la validación de este caso de uso a nuestro plan de regresión automática.
+
+a. ¿Qué herramientas usarías para automatizar la parte Web, IOS, Android y la parte de Backend?
 
 Aunque podría comentar sobre herramientas útiles para todos estos procesos, con las que tengo experiencia directa son cypress-javascript y selenium-python para web.
 
@@ -92,20 +94,3 @@ prueba, y la fecha de regreso es 3 días después de la fecha de salida.
 ✓ El usuario hace click en “Continuar”.
 
 
-
-Tratamiento de datos en APIs
-Teniendo en cuenta la documentación de la API de una tienda de mascotas
-(https://petstore.swagger.io). Realizar los siguientes puntos con el framework de
-Karate:
-1. Crear usuario mediante petición HTTP y posteriormente recuperar sus
-datos llamando al servicio correspondiente.
-2. Recoger mediante petición HTTP, el JSON que retorna el endpoint
-“/pet/findByStatus” y listar mediante una función los nombres de las
-mascotas que se hayan vendido.
-a. El formato de salida debe de estar formado por la tupla {id, name}.
-b. Se puede utilizar la estructura de datos que se prefiera.
-3. Crear una clase cuyo constructor requiera de la estructura de datos
-anterior y realizar un método que pueda recorrerla para poder identificar
-cuantas mascotas se llaman igual.
-a. Ejemplo de salida: {“William”: 11, “Floyd”: 2}. Como output se pide
-el código y los resultados de salida de los puntos anteriores.

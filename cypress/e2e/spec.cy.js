@@ -1,13 +1,14 @@
 import  cypressCommands  from '../support/commands'
 
-describe('Simple Google Test', () => {
-
-
+describe('iberia tech test', () => {
   beforeEach(() => {
     cypressCommands.loadLandingPage()
   })
 
-  it('check history issues  ', () => {
-    cypressCommands.defineFlight()
+  it('searches for a flight', () => {
+    cypressCommands.destination()
+    cypressCommands.date()
+    cypressCommands.passangers()
+    cypressCommands.go()
   }) 
 })
