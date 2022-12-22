@@ -31,14 +31,12 @@ Para back end no haría falta nada, ya que si la prueba funciona desde el front,
 Para mi las 3 principales son el "sprint planning", la "daily" y el "sprint review".
 También hay retrospectivas, reunión tres amigos o refinement, que aunque importantes, no son tan constantes.
 
-5. Como último paso, nos gustaría incorporar la validación de este caso de uso a nuestro plan de regresión automática.
+5. Como último paso, nos gustaría incorporar la validación de este caso de uso a nuestro plan de regresión automática.a. ¿Qué herramientas usarías para automatizar la parte Web, IOS, Android y la parte de Backend?
 
-a. ¿Qué herramientas usarías para automatizar la parte Web, IOS, Android y la parte de Backend?
 Aunque podría comentar sobre herramientas útiles para todos estos procesos, con las que tengo experiencia directa son cypress-javascript y selenium-python para web.
-b. ¿Qué herramientas de CI/CD crees que se podría usar para
 
-programar el lanzamiento de la regresión de forma planificada y
-manual?
+b. ¿Qué herramientas de CI/CD crees que se podría usar para programar el lanzamiento de la regresión de forma planificada y manual?
+
 Una vez más, podría mencionar múltiples herramientas, pero con la que tengo experiencia es Jenkins.
 
 6. El equipo de Desarrollo nos entrega un día tarde una HU prioritaria para el Producto. a. ¿Qué estrategia tomarías en caso de que veas que no puedes llegar a probarla?
@@ -80,6 +78,18 @@ THEN the carrousel image should change
 
 
 
+Simular un usuario que realiza los siguientes pasos:
+✓ Ir a https://www.iberia.com/
+✓ Selecciona un billete de ida y vuelta de Barcelona a Madrid, con 2 adultos
+y 1 niño.
+✓ La fecha de salida debe de ser 4 días desde la fecha de ejecución de la
+prueba, y la fecha de regreso es 3 días después de la fecha de salida.
+✓ El usuario hace click en “Buscar vuelos”.
+✓ El usuario selecciona un vuelo de ida al azar de la lista de resultados.
+✓ La tarifa seleccionada (Basic, Optima o Excelente) debe ser configurable.
+✓ El usuario selecciona un vuelo de vuelta al azar de la lista de resultados.
+✓ La tarifa seleccionada (Basic, Optima o Excelente) debe ser configurable.
+✓ El usuario hace click en “Continuar”.
 
 
 
