@@ -27,7 +27,7 @@
 const cypressCommands = {
 
     iNavigateToGoogle(){
-      cy.visit('https://www.google.es/')
+      cy.visit('https://www.iberia.com/')
       .get('button')
       .contains('Aceptar todo')
       .click()
